@@ -1,12 +1,15 @@
 import React from "react";
+import CardHeader from './NasaCardComponents.js/CardHeader.js';
+import CardImg from './NasaCardComponents.js/CardImg';
+import CardDescription from './NasaCardComponents.js/CardDescription';
 
 export default function NasaCard (props) {
-
+  
     return (
         <div>
-            <h1>Date: {props.data.date}</h1>
-            <h2>Photographer: {props.data.copyright}</h2>
-            <img src={props.data.url} />
+            <CardHeader data={props.data} />
+            <CardImg data={props.data} />
+            <CardDescription data={props.data}/>
         </div>
 
 
