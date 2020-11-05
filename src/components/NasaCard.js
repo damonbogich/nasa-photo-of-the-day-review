@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function NasaCard (props) {
-    console.log('card props', props);
 
     return (
         <div>
